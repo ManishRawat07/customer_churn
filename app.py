@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 import os
 
 # Load the pre-trained model
-model_path = os.path.abspath('churn_prediction_model.h5')
+model_path = os.path.abspath('model.h5')
 model = tf.keras.models.load_model(model_path)
 
 # model = tf.keras.models.load_model('churn_prediction_model.h5')
