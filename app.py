@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -11,7 +10,8 @@ import os
 # Load the pre-trained model
 model_path = os.path.abspath('churn_prediction_model.h5')
 model = tf.keras.models.load_model(model_path)
-#model = tf.keras.models.load_model('churn_prediction_model.h5')
+
+# model = tf.keras.models.load_model('churn_prediction_model.h5')
 
 # Function to preprocess input data
 def preprocess_input(data):
@@ -73,3 +73,4 @@ if __name__ == '__main__':
     main()
 
 # streamlit run app.py
+# streamlit run ./folder/main.py
